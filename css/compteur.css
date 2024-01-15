@@ -1,0 +1,108 @@
+/* RESET CSS  */
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  font-size: 62.5%; /* = 10px */
+}
+
+/* variables */
+
+:root {
+  --white: #fff;
+  --black: #1c2b2d;
+  --bg_counter--content: #d1cfcf;
+  --bg--mode: #fff;
+}
+
+.nightMode {
+  --bg--mode: #000000;
+}
+
+p {
+  font-size: 1.6rem;
+}
+
+/* GENERAL */
+
+body {
+  padding: 2rem;
+  display: flex;
+  gap: 2rem;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background-color: var(--bg--mode);
+  height: 100vh;
+}
+
+/* COMPTEUR */
+
+.counter--container {
+  width: 50%;
+  margin: 0 auto;
+  padding: 3rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.counter--content {
+  border: 1px solid var(--grey);
+  padding: 2rem;
+  background-color: var(--bg_counter--content);
+  color: var(--white);
+  text-align: center;
+  border-radius: 5px;
+}
+
+.counter--content h2 {
+  font-size: 3rem;
+  color: #000;
+}
+
+.counter--content hr {
+  height: 4px;
+  background-color: #000;
+}
+
+.counter--content > * {
+  margin-bottom: 2rem;
+}
+
+#count {
+  font-size: 5rem;
+}
+
+.buttons button {
+  padding: 1rem;
+  margin: 1rem 1rem;
+  font-size: 2.5rem;
+  color: var(--white);
+  font-weight: 700;
+  border: none;
+  outline: none;
+  border-radius: 3px;
+  cursor: pointer;
+}
+
+button#substract {
+  background-color: orangered;
+}
+
+button#reset {
+  background-color: var(--white);
+  color: var(--black);
+}
+
+button#add {
+  background-color: green;
+}
+
+button#theme {
+  background-color: var(--bg--mode);
+}
